@@ -89,7 +89,8 @@ label {
 }
 
 #social-links div {
-	padding: 5px 0;
+	padding-top: 25px;
+	margin: 1px;
 }
 
 .clear-all {
