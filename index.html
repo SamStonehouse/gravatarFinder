@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@PhaserSetToStun">
+	<meta name="twitter:title" content="Get Your Gravatar">
+	<meta name="twitter:description" content="Easily get your Gravatar image from your email address">
+	<meta name="twitter:creator" content="@PhaserSetToStun">
+	<title>GravSee - Easily get your Gravatar image from your email address</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/styles/normalise.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="assets/scripts/md5.min.js"></script>
+	<script src="assets/scripts/gravatarGetter.js"></script>
+	<script src="assets/scripts/main.js"></script>
+
+</head>
+<body>
+	<header id="header">
+		<img src="assets/images/gravsee.png" alt="GravSee">
+		<div id="social-links">
+			<div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="PhaserSetToStun">Tweet</a>
+			</div>
+			<div>
+				<a href="https://twitter.com/PhaserSetToStun" class="twitter-follow-button" data-show-count="false">Follow @PhaserSetToStun</a>
+			</div>
+		</div>
+		<div class="clear-all"></div>
+	</header>
+	<div class="content-block">
+		<h1>GravSee - Find your Gravatar</h1>
+		<p>Ever wanted to check a gravatar URL, maybe for testing or wondering what your image is set to without having to log into gravatar?</p>
+		<p>Well now you can!</p>
+	</div>
+	<div class="content-block">
+		<div>
+			<button id="get-grav">Get Gravatar</button>
+			<input id="grav-email" type="text" placeholder="Email Address">
+			<span id="show-extra" href="#">Extra Options</span>
+		</div>
+		
+		<div id="extra-options">
+			<div class="form-row"><label for="grav-size">Size</label><input id="grav-size" type="text" value="256"></div>
+			<div class="form-row"><label for="grav-rating">Rating</label><input id="grav-rating" type="text" value="g"></div>
+		</div>
+	</div>
+	<div class="content-block">
+		<h2>Gravatar</h2>
+		<div id="grav-url"></div>
+		<div id="grav-container">
+			
+		</div>
+	</div>
+</body>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</html>
