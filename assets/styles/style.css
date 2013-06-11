@@ -18,7 +18,7 @@ button {
 	background-color: #39629b;
 	font-weight: 300;
 	color: #fff;
-	text-shadow: 1px 1px 0 #222;
+	text-shadow: 1px 1px 10px #222;
 	width: 120px;
 	display: inline-block;
 }
