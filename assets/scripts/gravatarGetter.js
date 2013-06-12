@@ -53,9 +53,9 @@ gravatarGetter = (function(undefined) {
 			opts = mergeOptions(defaultOptions, opts);
 		}
 
-		hashedEmail = md5(email.toLowerCase());
+		var hashedEmail = md5(email.toLowerCase());
 
-		urlData = {
+		var urlData = {
 			s: opts.size,
 			r: opts.rating,
 			d: opts.defaultImage
