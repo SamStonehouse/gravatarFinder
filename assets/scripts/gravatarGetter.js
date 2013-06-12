@@ -47,11 +47,7 @@ gravatarGetter = (function(undefined) {
 		}
 
 		//If options is not defined set it to the default, otherwise merge it with the defaults
-		if (!opts) {
-			opts = defaultOptions;
-		} else {
-			opts = mergeOptions(defaultOptions, opts);
-		}
+		opts = opts ? defaultOptions : mergeOptions(defaultOptions, opts);
 
 		var hashedEmail = md5(email.toLowerCase());
 
