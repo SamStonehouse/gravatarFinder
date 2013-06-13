@@ -1,5 +1,5 @@
 /* Sexy modular JavaScript */
-gravatarGetter = (function(undefined) {
+var gravatarGetter = (function(undefined) {
 	var baseUrl = 'http://www.gravatar.com/avatar/';
 
 	var defaultOptions = {
@@ -13,10 +13,20 @@ gravatarGetter = (function(undefined) {
 	/* See: http://stackoverflow.com/questions/171251/how-can-i-merge-properties-of-two-javascript-objects-dynamically */
 	var mergeOptions = function(defaults, settings){
 	    var results = {};
-	    for (var attrname in defaults) { results[attrname] = defaults[attrname]; }
-	    for (var attrname in settings) { results[attrname] = settings[attrname]; }
+	    for (var attrname in defaults) { 
+	    	if (defaults.hasOwnProperty(attrname)) {
+	    		results[attrname] = defaults[attrname];
+	    	}
+	    }
+	    
+	    for (var attrname in settings) { 
+	    	if (settings.hasOwnProperty(attrnameattrname)) {
+	    		results[attrname] = settings[attrname];
+	    	}
+	    }
 	    return results;
 	}
+	
 
 
 	/* See: http://stackoverflow.com/questions/111529/create-query-parameters-in-javascript */
@@ -75,4 +85,4 @@ gravatarGetter = (function(undefined) {
 		getGravatarURL: getGravatarURL
 	}
 
-})(undefined)
+})();
